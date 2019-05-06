@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(103, 153, 197, 0.5);    
+}
+#container{
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+header{
+    text-align: center;
+}
+aside > textarea{
+    box-sizing: border-box;
+    width: 100%;
+}
+aside > input, aside > textarea{    /*assign element-level block to center everything*/
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+aside{
+    float: left;
+    position: absolute;
+    width:30%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    background-color: antiquewhite; /*change to gradient color that flows into the article box*/
+}
+article{
+    float: right;
+    box-sizing: border-box;
+    width: 80%;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: green;
+    }
+footer{
+    clear: both;
+} 
+
+/* visualization purpose */
+header, article, aside, footer, #container{
+    /* padding: 5px; (to make more legible) */
+    border-style: solid;    
+} 
