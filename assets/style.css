@@ -9,16 +9,14 @@ body{
 header{
     text-align: center;
 }
-aside > textarea{
-    box-sizing: border-box;
-    width: 100%;
+/*flexbox to stretch input field*/
+.form-row{
+    display: flex;
 }
-aside > input, aside > textarea{    /*assign element-level block to center everything*/
-    display: inline-block;
-    padding: 5px;
-    margin-top: 5px;
+.form-row > input, .form-row > textarea{
+    flex: 1;
+    margin-bottom: 10px;
 }
-
 aside{
     float: left;
     position: absolute;
@@ -28,6 +26,12 @@ aside{
     padding-right: 10px;
     text-align: center;
     background-color: antiquewhite; /*change to gradient color that flows into the article box*/
+}
+aside > h3{
+    margin: 10px;
+}
+aside > input[type="submit"]{
+    margin-bottom: 10px;
 }
 article{
     float: right;
