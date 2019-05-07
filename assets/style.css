@@ -40,7 +40,25 @@ article{
     padding-left: 15%;
     padding-right: 15%;
     background-color: green;
-    }
+}
+.modes-container > ol{
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between; /*supposedly provides spacing between <li> boxes but doesn't work yet*/
+}
+.modes-container > ol > li{     
+    flex: 1 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+    flex-basis: 20%;                /*doesn't work either*/
+    list-style-position: inside;
+    
+}
+.modes-container li:nth-child(1){background-color: rgba(128, 170, 206, 0.8)}
+.modes-container li:nth-child(2){background-color: rgba(206, 128, 171, 0.8)}
+.modes-container li:nth-child(3){background-color: rgba(164, 128, 206, 0.8)}
+.modes-container li:nth-child(4){background-color: rgba(205, 206, 128, 0.8)}
+.modes-container li:nth-child(5){background-color: rgba(206, 159, 128, 0.8)}
 footer{
     clear: both;
 } 
