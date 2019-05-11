@@ -9,7 +9,6 @@ body{
 header{
     text-align: center;
 }
-/*flexbox to stretch input field*/
 .form-row{
     display: flex;
 }
@@ -25,7 +24,7 @@ aside{
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
-    background-color: antiquewhite; /*change to gradient color that flows into the article box*/
+    background-color: antiquewhite; 
 }
 aside > h3{
     margin: 10px;
@@ -39,18 +38,24 @@ article{
     width: 80%;
     padding-left: 15%;
     padding-right: 15%;
+}
+
+#main-text{
     background-color: green;
 }
+.modes-container{
+    background-color: rgba(56, 211, 211, 0.8);
+}
 .modes-container > ol{
-    display: flex;
-    flex-wrap: wrap;    
-    justify-content: space-between; /*supposedly provides spacing between <li> boxes but doesn't work yet*/
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-between; 
 }
 .modes-container > ol > li{     
-    flex: 1 0 auto;
     box-sizing: border-box;
+    margin-bottom: 20px;
     padding: 20px;
-    flex-basis: 20%;                /*doesn't work either*/
+    flex-basis: 15%;                /*works now.  items times flex-basis width need to be less than 100% to show margin*/
     list-style-position: inside;
     
 }
@@ -65,6 +70,5 @@ footer{
 
 /* visualization purpose */
 header, article, aside, footer, #container{
-    /* padding: 5px; (to make more legible) */
     border-style: solid;    
 } 
